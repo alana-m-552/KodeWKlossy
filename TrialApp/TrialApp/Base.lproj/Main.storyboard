@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrialApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="roV-Yp-MyC">
+                                <rect key="frame" x="0.0" y="159" width="414" height="257"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hh6-Qe-Xio">
+                                <rect key="frame" x="184" y="559" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gx-Cb-FA2">
+                                <rect key="frame" x="159" y="498" width="97" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <size key="titleShadowOffset" width="-4" height="1"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.89401570429999999" green="0.67038538000000003" blue="0.36187615919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SI0-qD-I3f">
+                                <rect key="frame" x="121" y="72" width="183" height="37"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.89401570429999999" green="0.67038538000000003" blue="0.36187615919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="3" height="1"/>
+                            </label>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="ROARRRR" translatesAutoresizingMaskIntoConstraints="NO" id="2JI-g3-D9f">
+                                <rect key="frame" x="0.0" y="416" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Akf-oF-FPL"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54234474356902518" green="0.75408679249999999" blue="0.74586647705201137" alpha="0.45673694349315069" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="roV-Yp-MyC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9rm-HO-FyO"/>
+                            <constraint firstItem="roV-Yp-MyC" firstAttribute="top" secondItem="SI0-qD-I3f" secondAttribute="bottom" constant="50" id="BXC-oA-AaG"/>
+                            <constraint firstItem="SI0-qD-I3f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="PHy-WV-alz"/>
+                            <constraint firstItem="roV-Yp-MyC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RSZ-SL-zpD"/>
+                            <constraint firstItem="SI0-qD-I3f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="RyB-xn-lR0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SI0-qD-I3f" secondAttribute="trailing" constant="132" id="o1X-XS-dJl"/>
+                            <constraint firstItem="roV-Yp-MyC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wPX-mZ-bLF"/>
+                            <constraint firstItem="roV-Yp-MyC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xxw-KL-2cr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="trash" id="eKz-ov-xth">
+                            <color key="tintColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem systemItem="trash" id="X4G-wk-IFu">
+                            <color key="tintColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="uXq-Tj-9D4" id="NRV-Lu-M7u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="uXq-Tj-9D4">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="4pI-GS-roE"/>
+                        <outlet property="searchBar" destination="2JI-g3-D9f" id="Mg7-Y3-E4J"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="zaZ-6d-z8e"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="4UQ-sA-iRj"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="iOh-UK-G1i"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.1875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="640" height="640"/>
+    </resources>
+</document>
